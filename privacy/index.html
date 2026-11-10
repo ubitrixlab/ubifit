@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Privacy Policy · UbiFit</title>
-  <meta name="description" content="How the UbiFit app handles your ring data and profile: everything stays on your phone.">
+  <meta name="description" content="How the UbiFit app handles your ring data, profile, photos, and local storage.">
   <link rel="stylesheet" href="../assets/site.css">
 </head>
 <body>
@@ -21,18 +21,18 @@
 
   <main class="wrap">
     <h1>Privacy Policy</h1>
-    <p class="meta">Effective November 4, 2026 · Ubitrix Intl Inc</p>
+    <p class="meta">Effective November 10, 2026 · Ubitrix Intl Inc</p>
 
-    <p class="lede"><strong>The short version:</strong> UbiFit reads data from your smart ring over Bluetooth and keeps it on your phone. There is no UbiFit account. We do not receive, sell, or share your health data, and the app contains no advertising, analytics, or tracking.</p>
+    <p class="lede"><strong>The short version:</strong> UbiFit reads data from your smart ring over Bluetooth and stores it in the app on your phone. There is no UbiFit account or enabled cloud-sync service, and the app contains no advertising, analytics, or tracking. Information sent to your ring, photos you choose to save, and device backups are explained below.</p>
 
     <p>This policy explains what the UbiFit mobile app ("UbiFit", "the app") handles, where it is kept, and the choices you have. UbiFit is published by Ubitrix Intl Inc ("we", "us").</p>
 
     <h2>Information the app handles</h2>
-    <p>All of the following is created on, and stays on, your device.</p>
+    <p>The app handles the following information locally. Available readings depend on your ring and the features supported by the app on your platform.</p>
     <table>
       <tr>
         <th>Ring health and activity data</th>
-        <td>Heart rate, heart rate variability, blood oxygen (SpO₂), skin temperature, stress, steps, activity, distance, calories, sleep stages, workouts, meditation sessions, and estimated blood pressure where your ring supports it.</td>
+        <td>Heart rate, heart rate variability, blood oxygen (SpO₂), skin temperature, stress, steps, activity, distance, calories, sleep stages, workouts, and estimated blood pressure where supported.</td>
       </tr>
       <tr>
         <th>Profile you enter</th>
@@ -40,52 +40,54 @@
       </tr>
       <tr>
         <th>Ring connection details</th>
-        <td>Your ring's name, Bluetooth address, battery level, and firmware version, so the app can reconnect to it.</td>
+        <td>Your ring's advertised name, Bluetooth address or platform identifier, battery level, and firmware version. The app also remembers names you give your rings, linked to their MAC address when available or their platform identifier until it is available.</td>
       </tr>
     </table>
 
     <h2>How the information is used</h2>
     <ul>
       <li>To show your measurements, trends, sleep, and progress toward your goals.</li>
-      <li>To personalise estimates. If you provide height, weight, age, or sex, the app writes them to your ring over Bluetooth so the ring can calculate distance and calories. They go to your ring and nowhere else.</li>
+      <li>To display your profile and progress against your goals. The profile details and goals you enter are saved locally in the app; the current version does not send them to your ring.</li>
       <li>To find, connect to, and stay connected with your ring.</li>
     </ul>
     <p>We do not use your information for advertising, profiling, or any automated decision-making.</p>
 
     <h2>Where it is stored and for how long</h2>
     <ul>
-      <li>Data is stored in the app's private storage on your phone, which other apps cannot read.</li>
-      <li>Measurement history is kept for 90 days and then deleted automatically.</li>
-      <li>Your profile is kept until you change it, clear the app's storage, or uninstall the app.</li>
-      <li>On Android, the app opts out of device backup, so its data is not copied to your Google account.</li>
+      <li>App data is stored in private storage protected by your phone's app sandbox. Photos you explicitly save to your photo library are stored separately.</li>
+      <li>The app keeps approximately the most recent 90 days of measurement history. Older records are removed during normal storage cleanup when the app saves data; removal does not run on a fixed daily schedule.</li>
+      <li>Your profile, settings, and remembered ring names are kept separately from measurement history. Switching rings keeps saved readings and ring names. Clearing the app's storage or deleting the app removes its local records, subject to any backup you later restore.</li>
+      <li>On Android, the app opts out of Android's automatic app-data backup. On iOS, app data may be included in device backups according to your settings. Photos saved to your library may also sync through your photo service, such as iCloud Photos, according to your settings.</li>
     </ul>
 
     <h2>Sharing</h2>
-    <p>The current version of UbiFit does not send your personal or health data off your device. We do not sell, rent, or share it with anyone, and the app does not include third-party advertising, analytics, or crash-reporting software.</p>
-    <p>If a future version offers optional features that need an internet connection, such as cloud backup or syncing across devices, we will update this policy first and ask for your permission in the app before any data leaves your phone.</p>
+    <p>The current app has no enabled service that uploads your personal or health data to UbiFit servers. It uses Bluetooth to communicate with your ring and can save a photo to your library when you ask. We do not sell or rent your health data, and the app does not include third-party advertising, analytics, or crash-reporting software. Device backups and photo-library services are managed by your operating system and account settings.</p>
+    <p>If a future version offers optional features that need an internet connection, such as cloud backup or syncing across devices, we will update this policy first and ask for your permission in the app before enabling those uploads.</p>
 
     <h2>Permissions</h2>
     <table>
       <tr><th>Bluetooth (nearby devices)</th><td>To find, pair with, and read data from your ring.</td></tr>
       <tr><th>Location</th><td>Requested only on Android 11 and earlier, where Android requires it for Bluetooth scanning. UbiFit does not read, store, or use your location.</td></tr>
-      <tr><th>Foreground service</th><td>Keeps the connection to your ring alive while it syncs, shown as an ongoing notification.</td></tr>
-      <tr><th>Photos</th><td>Used only when you pick a profile photo. The selected picture is resized and stored inside the app.</td></tr>
+      <tr><th>Foreground service</th><td>Keeps the connection to your ring alive while it syncs on Android. How the service notification appears depends on your Android version and notification settings.</td></tr>
+      <tr><th>Camera</th><td>Used when you open Ring camera in UbiFit on supported iOS rings. The photo remains in memory until you choose Save photo.</td></tr>
+      <tr><th>Photos</th><td>Lets you choose a profile photo, which is resized and stored inside the app. When you choose Save photo in Ring camera on iOS, the app requests permission to add that photo to your library. Saving to Photos is separate from storing your profile image.</td></tr>
     </table>
     <p>You can withdraw any permission in your phone's settings. Some features stop working without it.</p>
 
     <h2>Your choices</h2>
     <ul>
       <li>Edit or remove your profile details in the app at any time.</li>
-      <li>Use <em>Forget this ring</em> in the app to remove a paired ring.</li>
-      <li>Delete everything by clearing the app's storage (Android: Settings → Apps → UbiFit → Storage → Clear storage) or by uninstalling the app.</li>
+      <li>Use <em>Pair new ring</em> under <em>Your ring</em> to choose another ring. Your current ring remains remembered until the new one connects successfully and its pairing is saved. Cancelling or a failed attempt keeps the previous pairing record. This does not guarantee an uninterrupted Bluetooth connection during an attempt.</li>
+      <li>Replacing a ring keeps its saved readings and your name for it, so the name can be restored when you pair it again. It does not remove the ring from your phone's Bluetooth settings.</li>
+      <li>Remove local app data by clearing the app's storage (Android: Settings → Apps → UbiFit → Storage → Clear storage) or deleting the app. This does not delete photos already saved to your library, device backups, or data stored on your ring; manage those separately.</li>
     </ul>
-    <p>Because we do not hold copies of your data on our servers, there is nothing for us to access, correct, or delete on your behalf. You are still welcome to contact us with any privacy question or request.</p>
+    <p>Because the app does not upload its stored records to our servers, we cannot access, correct, or delete those local records on your behalf. You are still welcome to contact us with any privacy question or request.</p>
 
     <h2>Security</h2>
     <p>Your data is protected by your phone's app sandbox. We recommend using a screen lock so that others with access to your phone cannot open the app.</p>
 
     <h2>Children</h2>
-    <p>UbiFit is not directed to children under 13, and we do not knowingly collect information from children.</p>
+    <p>UbiFit is intended for adults aged 18 and over. We do not knowingly collect information from children.</p>
 
     <h2>Health information</h2>
     <p>UbiFit is a general wellness app, not a medical device. Its readings are estimates and are not intended to diagnose, treat, or prevent any condition. See our <a href="../terms/">Terms of Use</a>.</p>
