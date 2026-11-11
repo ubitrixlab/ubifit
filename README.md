@@ -9,7 +9,14 @@ GitHub Pages at <https://ubitrixlab.github.io/ubifit/>.
 | Terms of Use | https://ubitrixlab.github.io/ubifit/terms/ | Store listings, in-app About |
 | Support | https://ubitrixlab.github.io/ubifit/support/ | App Store support URL, Play store settings website |
 
-Plain HTML and one stylesheet; no build step. `.nojekyll` turns off Jekyll.
+Plain HTML, one stylesheet and one script; no build step. `.nojekyll` turns off
+Jekyll.
+
+The design tokens in `assets/site.css` are a copy of the ubifit.net landing
+stylesheet (`ring-web/public/css/styles.css`), so the two properties read as one
+brand. There is no shared file — change the tokens there and this site drifts.
+`assets/site.js` is progressive enhancement only: every page is complete and
+readable with it blocked.
 
 ## Publishing
 

@@ -1,60 +1,201 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Support · UbiFit</title>
-  <meta name="description" content="Help with pairing your ring, permissions, and your data in the UbiFit app.">
+  <meta name="description" content="Pairing help, data questions, and contact for the UbiFit app by Ubitrix Intl Inc.">
+  <link rel="icon" type="image/png" href="../assets/logo-icon.png">
+
+  <script>
+    (function () {
+      document.documentElement.classList.add("js");
+      try {
+        var stored = localStorage.getItem("ubiring-theme-v2");
+        var theme = stored === "light" || stored === "dark" ? stored : "dark";
+        document.documentElement.setAttribute("data-theme", theme);
+      } catch (e) {
+        document.documentElement.setAttribute("data-theme", "dark");
+      }
+    })();
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700;800&display=swap">
   <link rel="stylesheet" href="../assets/site.css">
+  <script defer src="../assets/site.js"></script>
 </head>
 <body>
-  <header class="site">
-    <div class="wrap">
-      <a class="brand" href="../">UbiFit</a>
-      <nav class="site">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="ambient" aria-hidden="true"></div>
+  <div class="grain" aria-hidden="true"></div>
+  <div class="scroll-progress" data-progress aria-hidden="true"></div>
+
+  <header class="site-header" data-header>
+    <div class="wrap site-header__row">
+      <a class="brand" href="../">
+        <img src="../assets/logo-icon.png" alt="" width="30" height="30">
+        <span>UbiFit</span>
+      </a>
+      <nav class="site-nav" aria-label="Documents">
         <a href="../privacy/">Privacy</a>
         <a href="../terms/">Terms</a>
         <a href="../support/" aria-current="page">Support</a>
       </nav>
+      <button class="theme-toggle" type="button" data-theme-toggle aria-pressed="false" aria-label="Switch to light theme">
+        <span class="theme-toggle__icon" aria-hidden="true">
+          <svg class="theme-toggle__sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4.5"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M19.1 4.9l-1.4 1.4M6.3 17.7l-1.4 1.4"/></svg>
+          <svg class="theme-toggle__moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 14.5A8.5 8.5 0 0 1 9.5 4a8.5 8.5 0 1 0 10.5 10.5z"/></svg>
+        </span>
+      </button>
     </div>
   </header>
 
-  <main class="wrap">
-    <h1>Support</h1>
-    <p class="meta">Ubitrix Intl Inc</p>
+  <main id="main">
+    <div class="wrap">
 
-    <p class="lede">Need help? Email <a href="mailto:info@ubitrix.com">info@ubitrix.com</a> with your phone model, OS version, and the app version shown under Ring → About. We usually reply within two business days.</p>
+      <div class="doc-hero">
+        <p class="doc-hero__badge settle" style="--i:0">Help</p>
+        <h1 class="doc-hero__title settle" style="--i:1">Support</h1>
+        <p class="doc-hero__lede settle" style="--i:2">Need help? Email <a href="mailto:info@ubitrix.com">info@ubitrix.com</a> with your phone model, OS version, and the app version shown under Ring → About. We usually reply within two business days.</p>
+        <div class="contact settle" style="--i:3">
+          <span class="contact__who">Ubitrix Intl Inc</span>
+          <a class="btn" href="mailto:info@ubitrix.com">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+            info@ubitrix.com
+          </a>
+        </div>
+      </div>
 
-    <h2>Common questions</h2>
+      <div class="doc">
+        <nav class="toc toc--desktop" data-toc aria-labelledby="toc-title-d">
+          <p class="toc__title" id="toc-title-d">Questions</p>
+          <ul class="toc__list">
+            <li><a href="#find-ring">The app can't find my ring</a></li>
+            <li><a href="#not-updating">My data stopped updating</a></li>
+            <li><a href="#where-stored">Where is my data stored?</a></li>
+            <li><a href="#pair-another">How do I pair another ring?</a></li>
+            <li><a href="#delete-data">How do I delete my data?</a></li>
+            <li><a href="#camera-photos">Where do Ring camera photos go?</a></li>
+            <li><a href="#medical-grade">Are the readings medical-grade?</a></li>
+          </ul>
+        </nav>
 
-    <h3>The app can't find my ring</h3>
-    <ul>
-      <li>Make sure Bluetooth is on and the ring is charged and close to your phone.</li>
-      <li>Allow the <em>Nearby devices</em> permission when asked. On Android 11 and earlier, also allow <em>Location</em>, which Android requires for Bluetooth scanning.</li>
-      <li>If the ring is paired with another phone or app, disconnect it there first.</li>
-    </ul>
+        <details class="toc toc--mobile" data-toc>
+          <summary>Questions</summary>
+          <ul class="toc__list">
+            <li><a href="#find-ring">The app can't find my ring</a></li>
+            <li><a href="#not-updating">My data stopped updating</a></li>
+            <li><a href="#where-stored">Where is my data stored?</a></li>
+            <li><a href="#pair-another">How do I pair another ring?</a></li>
+            <li><a href="#delete-data">How do I delete my data?</a></li>
+            <li><a href="#camera-photos">Where do Ring camera photos go?</a></li>
+            <li><a href="#medical-grade">Are the readings medical-grade?</a></li>
+          </ul>
+        </details>
 
-    <h3>My data stopped updating</h3>
-    <p>Open the app to let it reconnect. Some phones stop background apps to save battery. If syncing keeps pausing, turn off battery optimisation for UbiFit in your phone's settings.</p>
+        <div class="doc__body">
+          <section class="sec" id="questions">
+            <div class="sec__head">
+              <h2 class="sec__title">Common questions<a class="sec__anchor" href="#questions" aria-label="Link to this section"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.5.5l3-3a5 5 0 0 0-7-7l-1.7 1.7"/><path d="M14 11a5 5 0 0 0-7.5-.5l-3 3a5 5 0 0 0 7 7l1.7-1.7"/></svg></a></h2>
+            </div>
 
-    <h3>Where is my data stored?</h3>
-    <p>The app stores readings, your profile, and ring names locally and has no UbiFit account or enabled cloud-sync service. Device backups and photos saved to your library may be managed or synced by your operating system and account settings. See the <a href="../privacy/">Privacy Policy</a> for details.</p>
+            <div class="faq">
+              <details class="faq__item" id="find-ring" open>
+                <summary class="faq__q">The app can't find my ring</summary>
+                <div class="faq__a">
+                  <ul>
+                    <li>Make sure Bluetooth is on and the ring is charged and close to your phone.</li>
+                    <li>Allow the <em>Nearby devices</em> permission when asked. On Android 11 and earlier, also allow <em>Location</em>, which Android requires for Bluetooth scanning.</li>
+                    <li>If the ring is paired with another phone or app, disconnect it there first.</li>
+                  </ul>
+                </div>
+              </details>
 
-    <h3>How do I pair another ring?</h3>
-    <p>Open the <em>Ring</em> tab and choose <em>Pair a new ring</em>. Your current ring stays remembered until the new connection succeeds and its pairing is saved. If you cancel or pairing fails, the previous pairing record is kept, although the Bluetooth connection may need to reconnect. Saved readings and ring names are kept when you switch. Names are matched by the ring's MAC address when available, with its platform identifier as a fallback.</p>
+              <details class="faq__item" id="not-updating">
+                <summary class="faq__q">My data stopped updating</summary>
+                <div class="faq__a">
+                  <p>Open the app to let it reconnect. Some phones stop background apps to save battery. If syncing keeps pausing, turn off battery optimisation for UbiFit in your phone's settings.</p>
+                </div>
+              </details>
 
-    <h3>How do I delete my data?</h3>
-    <p>Clear the app's storage (Android: Settings → Apps → UbiFit → Storage → Clear storage) or delete the app to remove local app data. Replacing a ring does not delete that data or remove its OS Bluetooth pairing. Photos already saved to your library, device backups, and data on the ring must be managed separately.</p>
+              <details class="faq__item" id="where-stored">
+                <summary class="faq__q">Where is my data stored?</summary>
+                <div class="faq__a">
+                  <p>The app stores readings, your profile, and ring names locally and has no UbiFit account or enabled cloud-sync service. Device backups and photos saved to your library may be managed or synced by your operating system and account settings. See the <a href="../privacy/">Privacy Policy</a> for details.</p>
+                </div>
+              </details>
 
-    <h3>Where do Ring camera photos go?</h3>
-    <p>On supported iOS rings, Ring camera takes photos inside UbiFit. A photo stays in memory until you choose <em>Save photo</em> and allow the app to add it to your photo library. Saved photos may sync through your photo service according to your settings. This feature does not control the stock Camera app while UbiFit is in the background.</p>
+              <details class="faq__item" id="pair-another">
+                <summary class="faq__q">How do I pair another ring?</summary>
+                <div class="faq__a">
+                  <p>Open the <em>Ring</em> tab and choose <em>Pair a new ring</em>. Your current ring stays remembered until the new connection succeeds and its pairing is saved. If you cancel or pairing fails, the previous pairing record is kept, although the Bluetooth connection may need to reconnect. Saved readings and ring names are kept when you switch. Names are matched by the ring's MAC address when available, with its platform identifier as a fallback.</p>
+                </div>
+              </details>
 
-    <h3>Are the readings medical-grade?</h3>
-    <p>No. UbiFit is a wellness app and its readings are estimates. Please see a health professional about any health concern.</p>
+              <details class="faq__item" id="delete-data">
+                <summary class="faq__q">How do I delete my data?</summary>
+                <div class="faq__a">
+                  <p>Clear the app's storage (Android: Settings → Apps → UbiFit → Storage → Clear storage) or delete the app to remove local app data. Replacing a ring does not delete that data or remove its OS Bluetooth pairing. Photos already saved to your library, device backups, and data on the ring must be managed separately.</p>
+                </div>
+              </details>
+
+              <details class="faq__item" id="camera-photos">
+                <summary class="faq__q">Where do Ring camera photos go?</summary>
+                <div class="faq__a">
+                  <p>On supported iOS rings, Ring camera takes photos inside UbiFit. A photo stays in memory until you choose <em>Save photo</em> and allow the app to add it to your photo library. Saved photos may sync through your photo service according to your settings. This feature does not control the stock Camera app while UbiFit is in the background.</p>
+                </div>
+              </details>
+
+              <details class="faq__item" id="medical-grade">
+                <summary class="faq__q">Are the readings medical-grade?</summary>
+                <div class="faq__a">
+                  <p>No. UbiFit is a wellness app and its readings are estimates. Please see a health professional about any health concern.</p>
+                </div>
+              </details>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
   </main>
 
-  <footer class="site">
-    <div class="wrap">© 2026 Ubitrix Intl Inc · <a href="../privacy/">Privacy</a> · <a href="../terms/">Terms</a> · <a href="../support/">Support</a></div>
+  <footer class="site-footer">
+    <div class="wrap">
+      <p class="site-footer__wordmark">UbiFit</p>
+      <div class="site-footer__cols">
+        <div class="site-footer__col">
+          <h2>Documents</h2>
+          <ul>
+            <li><a href="../privacy/">Privacy Policy</a></li>
+            <li><a href="../terms/">Terms of Use</a></li>
+            <li><a href="../support/">Support</a></li>
+          </ul>
+        </div>
+        <div class="site-footer__col">
+          <h2>Product</h2>
+          <ul>
+            <li><a href="https://ubifit.net">ubifit.net</a></li>
+            <li><a href="../">Document index</a></li>
+          </ul>
+        </div>
+        <div class="site-footer__col">
+          <h2>Contact</h2>
+          <ul>
+            <li><a href="mailto:info@ubitrix.com">info@ubitrix.com</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="site-footer__bottom">
+        <span>© 2026 Ubitrix Intl Inc</span>
+        <span>UbiFit is a general wellness app, not a medical device.</span>
+      </div>
+    </div>
   </footer>
+
+  <button class="to-top" type="button" data-to-top aria-label="Back to top">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+  </button>
 </body>
 </html>
