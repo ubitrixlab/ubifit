@@ -153,14 +153,14 @@
                   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
                   Ring health and activity data on iPhone and iPad
                 </div>
-                <p class="defs__v">Heart rate, heart rate variability, stress, steps, activity, distance, calories, and sleep and workouts where supported. The iOS app does not measure, store, or show blood pressure, blood oxygen (SpO₂), or skin temperature.</p>
+                <p class="defs__v">Heart rate, heart rate variability, stress, steps, activity, distance, and calories. On iPhone and iPad, the app does not read, store, or show blood pressure, and it does not show blood oxygen (SpO₂) or skin temperature. Where your ring supports them, the app still sets the ring to record blood oxygen and skin temperature in the background and copies those readings to your phone when it syncs. They are kept with your other ring history.</p>
               </div>
               <div class="defs__row">
                 <div class="defs__k">
                   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
                   Ring health and activity data on Android
                 </div>
-                <p class="defs__v">The same readings as on iPhone and iPad, plus blood oxygen (SpO₂), skin temperature, and estimated blood pressure where your ring supports them.</p>
+                <p class="defs__v">Heart rate, heart rate variability, stress, steps, activity, distance, and calories, plus sleep stages, workouts, blood oxygen (SpO₂), skin temperature, and estimated blood pressure where your ring supports them.</p>
               </div>
               <div class="defs__row">
                 <div class="defs__k">
@@ -266,7 +266,8 @@
             </div>
             <ul>
               <li>Edit or remove your profile details in the app at any time.</li>
-              <li>Use <em>Pair a new ring</em> on the <em>Ring</em> tab to choose another ring. The app first disconnects your current ring and removes its saved pairing, then searches for rings nearby. The ring you connect next is saved as your ring. If you cancel the search or the new ring does not connect, your previous ring is not restored and the app has no saved ring until you pair one; choose <em>Connect Your Ring</em> on the <em>Ring</em> tab to pair a ring, including your previous one.</li>
+              <li>Use <em>Pair a new ring</em> on the <em>Ring</em> tab to choose another ring. On iPhone and iPad, the app first disconnects your current ring and forgets it in UbiFit, then searches for rings nearby, and the ring you connect next is saved as your ring. If you cancel the search or the new ring does not connect, no ring is saved until you pair one with <em>Connect Your Ring</em> on the <em>Ring</em> tab; it can be your previous ring.</li>
+              <li>On Android, your current ring stays saved until the new one connects and its pairing is saved. Cancelling or a failed attempt keeps the previous pairing, although the Bluetooth connection may need to reconnect.</li>
               <li>Replacing a ring keeps its saved readings and your name for it, so the name can be restored when you pair it again. It does not remove the ring from your phone's Bluetooth settings.</li>
               <li>Remove local app data by clearing the app's storage (Android: Settings → Apps → UbiFit → Storage → Clear storage) or deleting the app. This does not delete photos already saved to your library, device backups, or data stored on your ring; manage those separately.</li>
             </ul>

@@ -107,7 +107,7 @@
                 <div class="faq__a">
                   <ul>
                     <li>Make sure Bluetooth is on and the ring is charged and close to your phone.</li>
-                    <li>Allow the <em>Nearby devices</em> permission when asked. On Android 11 and earlier, also allow <em>Location</em>, which Android requires for Bluetooth scanning.</li>
+                    <li>Allow <em>Bluetooth</em> on iPhone and iPad, or <em>Nearby devices</em> on Android, when asked. On Android 11 and earlier, also allow <em>Location</em>, which Android requires for Bluetooth scanning.</li>
                     <li>If the ring is paired with another phone or app, disconnect it there first.</li>
                   </ul>
                 </div>
@@ -116,7 +116,7 @@
               <details class="faq__item" id="not-updating">
                 <summary class="faq__q">My data stopped updating</summary>
                 <div class="faq__a">
-                  <p>Open the app to let it reconnect. Some phones stop background apps to save battery. If syncing keeps pausing, turn off battery optimisation for UbiFit in your phone's settings.</p>
+                  <p>Open the app to let it reconnect. Some phones stop background apps to save battery. On Android, if syncing keeps pausing, turn off battery optimisation for UbiFit in your phone's settings.</p>
                 </div>
               </details>
 
@@ -130,7 +130,12 @@
               <details class="faq__item" id="pair-another">
                 <summary class="faq__q">How do I pair another ring?</summary>
                 <div class="faq__a">
-                  <p>Open the <em>Ring</em> tab and choose <em>Pair a new ring</em>. The app disconnects your current ring and removes its saved pairing, then shows the rings nearby. Choose your new ring; once it connects, the app saves it as your ring. If you go back without connecting a ring, or the new ring does not connect, your previous ring is not restored. To pair a ring after that, including your previous one, choose <em>Connect Your Ring</em> on the <em>Ring</em> tab. If the app cannot disconnect or forget your current ring, that ring stays saved and the search does not open, so you can try again. Saved readings and ring names are kept when you switch. Names are matched by the ring's MAC address when available, with its platform identifier as a fallback.</p>
+                  <p>Open the <em>Ring</em> tab and choose <em>Pair a new ring</em>.</p>
+                  <ul>
+                    <li>On iPhone and iPad, the app first disconnects your current ring and forgets it. If it cannot, that ring stays saved and the search does not open, so you can try again. Otherwise the app shows the rings nearby: choose your new ring, and once it connects, the app saves it as your ring. If you go back without connecting a ring, or the new ring does not connect, your previous ring is not restored; choose <em>Connect Your Ring</em> on the <em>Ring</em> tab to pair a ring, including your previous one.</li>
+                    <li>On Android, your current ring stays saved until the new ring connects and its pairing is saved. If you cancel or pairing fails, the previous pairing is kept, although the Bluetooth connection may need to reconnect.</li>
+                  </ul>
+                  <p>Saved readings and ring names are kept when you switch. Names are matched by the ring's MAC address when available, with its platform identifier as a fallback.</p>
                 </div>
               </details>
 
